@@ -25,7 +25,7 @@ li {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(top.png);
+  background-image: url(image/top.png);
   background-size: cover;
   color: white;
   text-align: center;
@@ -295,3 +295,83 @@ footer {
 }
 
 /* Practiceここまで */
+
+
+/* CSSレッスンここから */
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #eee;
+}
+
+html, body, #main-nav, #main-nav ul, #main-nav li  {
+  height: 100%;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  background: #0d3349;
+}
+#main-nav li {
+  /*background: #70a678;*/
+  background-image: url(image/Penguins.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+  /* center */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#main-nav li:hover {
+  width: 200%;
+}
+#main-nav li:nth-child(2) {
+  /*background: #7771b9;*/
+  background-image: url(image/Tulips.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#main-nav li:nth-child(3) {
+  /*background: #b97296;*/
+  background-image: url(image/Koala.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#main-nav li:nth-child(4) {
+  /*background: #6998b9;*/
+  background-image: url(image/Chrysanthemum.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#main-nav a {
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
+}
+#main-nav a:hover {
+  background: rgba(255,255,255,.2);
+}
+/* CSSレッスンここまで */
